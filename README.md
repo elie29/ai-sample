@@ -1,14 +1,21 @@
 # AI-Assisted Engineering Template
 
-A public, sanitized example of the project structure described in the article series
-**"AI Writes the Code. So What Is the Engineer's Job Now?"**:
-
-- Part 1 - the story: LINK-TO-PART-1
-- Part 2 - the method (the living specification): LINK-TO-PART-2
-
 This repository contains no business logic. It is the **skeleton** you can copy into
 your own backend and frontend repositories to work with an AI assistant (Claude Code
 or similar) in a disciplined way.
+
+## The article series behind this template
+
+This project is the companion of my two-part series
+**"AI Writes the Code. So What Is the Engineer's Job Now?"**, based on a real
+two-month enterprise project built with this exact structure:
+
+- [Part 1 - The story](https://medium.com/@elie29/ai-writes-the-code-so-what-is-the-engineers-job-now-79fa3fdf1b88): one developer, two repositories, and the
+  bugs an adversarial AI review found before a single line of code.
+- Part 2 - The method (coming soon): the living specification - why the code
+  is no longer the source of truth, and what that changes for every role in the SDLC.
+
+The articles explain the *why* behind every folder in this repository.
 
 ## The core ideas
 
