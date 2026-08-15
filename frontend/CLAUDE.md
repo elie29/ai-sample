@@ -1,12 +1,12 @@
 # Frontend - CLAUDE.md
 
-Angular single-page application. This file is the entry point the AI reads every
-session. It stays **concise**: details live in focused rule files loaded on demand.
+Angular single-page application. This file is the entry point the AI reads every session. 
+
+It stays **concise**: details live in focused rule files loaded on demand.
 
 ## What this project is
 
-The user interface of a sample enterprise asset platform. Replace this paragraph
-with a short, precise description of YOUR application and its users.
+The user interface of a sample enterprise asset platform. Replace this paragraph with a short, precise description of YOUR application and its users.
 
 ## Non-negotiable rules
 
@@ -30,14 +30,14 @@ with a short, precise description of YOUR application and its users.
 
 ## Workflow
 
-business idea -> specification (docs/superpowers/specs/) -> the security-review skill -> first screen ->
-look at the running application -> accessibility review -> adjust -> repeat.
+business idea -> specification (docs/superpowers/specs/) -> the security-review skill -> first screen -> look at the running application -> accessibility review -> adjust -> repeat.
 
 The running application is the maquette. The browser is the feedback loop.
 
-Specs and plans are written by the superpowers plugin skills and validated by the human
-before the next step - see docs/superpowers/README.md. The state of the work lives
-in those files, not in the conversation.
+Specs and plans are written by the superpowers plugin skills and validated by the human before the next step - see docs/superpowers/README.md.
+
+The state of the work lives in those files, not in the conversation.
+
 Reusable prompts live in docs/prompts/ - use them instead of improvising.
 
 ## Commands
