@@ -12,7 +12,7 @@ two-month enterprise project built with this exact structure:
 
 - [Part 1 - The story](https://elie29.medium.com/ai-writes-the-code-so-what-is-the-engineers-job-now-79fa3fdf1b88): one developer, two repositories, and the
   bugs an adversarial AI review found before a single line of code.
-- Part 2 - The method (coming soon): the living specification - why the code
+- [Part 2 - The method](https://elie29.medium.com/the-living-specification-how-i-keep-ai-written-code-correct-907be05c9eed): the living specification - why the code
   is no longer the source of truth, and what that changes for every role in the SDLC.
 
 The articles explain the *why* behind every folder in this repository.
