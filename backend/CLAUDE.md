@@ -49,12 +49,12 @@ Never end a turn that changed state — code, decision, or blocker — without t
 ### On resume
 
 1. Read the plan in `docs/superpowers/plans/` whose `Status:` is `in progress`.
-2. Announce the step named in `Resume at` **before** writing anything.
-3. Start there — not at the first unchecked box.
-4. Ask which plan to pick up **only** when the in-progress plan is `done` and other plans are waiting. Otherwise resume the in-progress one without asking.
+2. **Reconcile every `uncommitted` marker.** The owner commits between turns, so each one is presumed stale: find the commit that carries the task's change (`git log -- <the files the task names>`) and write its sha in the task's steps, in the `## Tasks` index and in `Last updated`. Done when no `uncommitted` remains except on a change `git status` still shows.
+3. Announce the step named in `Resume at` **before** writing anything.
+4. Start there — not at the first unchecked box.
+5. Ask which plan to pick up **only** when the in-progress plan is `done` and other plans are waiting. Otherwise resume the in-progress one without asking.
 
 `superpowers:writing-plans` generates the plan body; this header, the task index and these two sections are added on top of whatever it produces.
-
 ## Detailed rules (load only when relevant)
 
 | Topic | File |
