@@ -55,6 +55,7 @@ Never end a turn that changed state — code, decision, or blocker — without t
 5. Ask which plan to pick up **only** when the in-progress plan is `done` and other plans are waiting. Otherwise resume the in-progress one without asking.
 
 `superpowers:writing-plans` generates the plan body; this header, the task index and these two sections are added on top of whatever it produces.
+
 ## Detailed rules (load only when relevant)
 
 | Topic | File |
