@@ -60,6 +60,15 @@ When the last task is checked, set `Status:` to `done` in the same write. That t
 
 `superpowers:writing-plans` generates the plan body; this header, the task index and these two sections are added on top of whatever it produces.
 
+## Change request
+
+Before making any changes:
+
+* Respect all project rules, conventions, and available skills.
+* Use the **Superpowers** plugin and respect the process (brainstorm, design, plan, tdd, review, etc..).
+* **Do not invent** requirements, behaviors, APIs, data models, or implementation details. If anything is unclear or missing, stop and ask me specific questions before proceeding.
+* If additional context or files are required, tell me exactly what you need.
+
 ## Detailed rules (load only when relevant)
 
 | Topic | File |
