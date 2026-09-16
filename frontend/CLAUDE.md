@@ -40,6 +40,10 @@ Write the plan file **first**, then reply. The reply is an echo of what was writ
 
 Never end a turn that changed state — code, decision, or blocker — without this write.
 
+### Closing a plan
+
+When the last task is checked, set `Status:` to `done` in the same write. That task's line and `Last updated` carry the date alone — `- [x] Task 12 — 2026-08-11` — since the closing commit cannot name itself and a `done` plan is never resumed; `git log -1 -- <plan>` finds it. `Resume at` reads `— (nothing; every task is checked)`.
+
 ### On resume
 
 1. Read the plan in `docs/superpowers/plans/` whose `Status:` is `in progress`.
