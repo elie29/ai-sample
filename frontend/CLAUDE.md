@@ -63,6 +63,10 @@ Before making any changes:
 * **Do not invent** requirements, behaviors, APIs, data models, or implementation details. If anything is unclear or missing, stop and ask me specific questions before proceeding.
 * If additional context or files are required, tell me exactly what you need.
 
+## Code design
+
+Code you write or change respects the **SOLID** principles (single responsibility, open/closed, Liskov substitution, interface segregation, dependency inversion) and uses established **Design Patterns** (GoF and idiomatic equivalents) where they fit the problem. Pick a pattern because the code needs it now, and name it in the design or review when you apply one. When the existing code departs from these principles, point it out and ask before refactoring beyond the change's scope.
+
 ## Non-negotiable rules
 
 - The OpenAPI contract is the source of truth for API consumption. Generated client code is never manually edited.
