@@ -93,10 +93,6 @@ business idea -> specification (docs/superpowers/specs/) -> the security-review 
 
 The running application is the maquette. The browser is the feedback loop.
 
-Specs and plans are written by the superpowers plugin skills and validated by the human before the next step - see docs/superpowers/README.md.
-
-The state of the work lives in those files, not in the conversation.
-
 Reusable prompts live in docs/prompts/ - use them instead of improvising.
 
 ## Commands
