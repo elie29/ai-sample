@@ -89,8 +89,6 @@ Code you write or change respects the **SOLID** principles (single responsibilit
 business need -> specification (docs/superpowers/specs/) -> invariants -> the security-review skill -> adjust specification -> execution plan (docs/superpowers/plans/) -> implement small task ->
 verify -> human review -> human commit.
 
-Specs and plans are written by the superpowers plugin skills (brainstorming, then writing-plans) and validated by the human at each step - see docs/superpowers/README.md.
-
 ## Commands
 
 - Build: `./mvnw clean verify`
