@@ -91,10 +91,6 @@ verify -> human review -> human commit.
 
 Specs and plans are written by the superpowers plugin skills (brainstorming, then writing-plans) and validated by the human at each step - see docs/superpowers/README.md.
 
-The state of the work lives in those files, not in the conversation: status, current task, open questions and blockers are updated in the file as they change, so a session with no chat history can resume the work.
-
-A decision that lives only in the chat did not happen: record it in docs/decisions/. Reusable prompts live in docs/prompts/ - use them instead of improvising.
-
 ## Commands
 
 - Build: `./mvnw clean verify`
