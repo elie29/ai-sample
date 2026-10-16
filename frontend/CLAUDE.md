@@ -19,7 +19,9 @@ Every plan in `docs/superpowers/plans/` opens with this block, above the goal:
 
 ```text
 > **Status:** in progress | blocked | done
+>
 > **Resume at:** Task {n} — {what to actually do next, one line}
+>
 > **Last updated:** {YYYY-MM-DD} · {commit sha, or `uncommitted`}
 ```
 
