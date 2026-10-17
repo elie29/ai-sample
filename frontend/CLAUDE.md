@@ -88,6 +88,26 @@ The running application is the maquette. The browser is the feedback loop.
 
 Reusable prompts live in docs/prompts/ - use them instead of improvising.
 
+## Non-negotiable rules
+
+* The OpenAPI contract is the source of truth for API consumption. Generated client code is never manually edited.
+* The design system rules apply to every screen. No ad-hoc styling.
+* Accessibility is part of every feature, not a final phase.
+* Every task ends with a verification command (tests, lint, build). Never claim "it should work" - run it.
+* Never commit. The human commits.
+* One task, one component when possible. Ask before widening a change.
+
+## Detailed rules (load only when relevant)
+
+| Topic | File |
+| --- | --- |
+| Architecture and state | .claude/rules/architecture.md |
+| API consumption | .claude/rules/api.md |
+| Design system and UX | .claude/rules/design-ux.md |
+| Accessibility | .claude/rules/accessibility.md |
+| Testing | .claude/rules/testing.md |
+| Naming conventions | .claude/rules/naming.md |
+
 ## Commands
 
 * Install: `npm ci`
