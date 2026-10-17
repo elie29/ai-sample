@@ -8,6 +8,11 @@ It stays **concise**: details live in focused rule files loaded on demand.
 
 The user interface of a sample enterprise asset platform. Replace this paragraph with a short, precise description of YOUR application and its users.
 
+# Global instructions
+
+These apply across all projects, in addition to any project-level
+`CLAUDE.md`.
+
 ## Plan State Continuity
 
 Work in progress is tracked in `docs/superpowers/plans/`.
@@ -24,6 +29,8 @@ Every plan in `docs/superpowers/plans/` opens with this block, above the goal:
 >
 > **Last updated:** {YYYY-MM-DD} · {commit sha, or `uncommitted`}
 ```
+
+Keep the empty `>` lines: Markdown formatted with `proseWrap: "never"` joins consecutive lines into one, and the header is read line by line.
 
 `Resume at` is authoritative and is **not** "the first unchecked box" — it is where work actually restarts, which may be mid-task, a rework of an already-checked box, or a verification step.
 
@@ -60,34 +67,18 @@ When the last task is checked, set `Status:` to `done` in the same write. That t
 
 Before making any changes:
 
-* Respect all project rules, conventions, and available skills.
-* Use the **Superpowers** plugin and respect the process (brainstorm, design, plan, tdd, review, etc..).
-* **Do not invent** requirements, behaviors, APIs, data models, or implementation details. If anything is unclear or missing, stop and ask me specific questions before proceeding.
-* If additional context or files are required, tell me exactly what you need.
+- Respect all project rules, conventions, and available skills.
+- Use the **Superpowers** plugin and respect the process (brainstorm, design, plan, tdd, review, etc..).
+- **Do not invent** requirements, behaviors, APIs, data models, or implementation details. If anything is unclear or missing, stop and ask me specific questions before proceeding.
+- If additional context or files are required, tell me exactly what you need.
+
+## Git push
+
+Never run `git push`, in any form (`--force`, `--tags`, to any remote or branch), nor any command that pushes on your behalf (`gh pr create` pushing a branch, `gh repo sync`, etc.). Pushing is mine alone: stop at the local commit and tell me it is ready to push.
 
 ## Code design
 
 Code you write or change respects the **SOLID** principles (single responsibility, open/closed, Liskov substitution, interface segregation, dependency inversion) and uses established **Design Patterns** (GoF and idiomatic equivalents) where they fit the problem. Pick a pattern because the code needs it now, and name it in the design or review when you apply one. When the existing code departs from these principles, point it out and ask before refactoring beyond the change's scope.
-
-## Non-negotiable rules
-
-* The OpenAPI contract is the source of truth for API consumption. Generated client code is never manually edited.
-* The design system rules apply to every screen. No ad-hoc styling.
-* Accessibility is part of every feature, not a final phase.
-* Every task ends with a verification command (tests, lint, build). Never claim "it should work" - run it.
-* Never commit. The human commits.
-* One task, one component when possible. Ask before widening a change.
-
-## Detailed rules (load only when relevant)
-
-| Topic | File |
-| --- | --- |
-| Architecture and state | .claude/rules/architecture.md |
-| API consumption | .claude/rules/api.md |
-| Design system and UX | .claude/rules/design-ux.md |
-| Accessibility | .claude/rules/accessibility.md |
-| Testing | .claude/rules/testing.md |
-| Naming conventions | .claude/rules/naming.md |
 
 ## Workflow
 
