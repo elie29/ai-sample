@@ -88,11 +88,14 @@ Code you write or change respects the **SOLID** principles (single responsibilit
 
 ## Workflow
 
-business idea -> specification (docs/superpowers/specs/) -> the security-review skill -> first screen -> look at the running application -> accessibility review -> adjust -> repeat.
+business need -> specification (docs/superpowers/specs/) -> invariants -> the security-review skill -> adjust specification -> execution plan (docs/superpowers/plans/) -> implement small task ->
+verify -> human review -> human commit.
 
-## Code design
+Specs and plans are written by the superpowers plugin skills (brainstorming, then writing-plans) and validated by the human at each step - see docs/superpowers/README.md.
 
-Code you write or change respects the **SOLID** principles (single responsibility, open/closed, Liskov substitution, interface segregation, dependency inversion) and uses established **Design Patterns** (GoF and idiomatic equivalents) where they fit the problem. Pick a pattern because the code needs it now, and name it in the design or review when you apply one. When the existing code departs from these principles, point it out and ask before refactoring beyond the change's scope.
+The state of the work lives in those files, not in the conversation: status, current task, open questions and blockers are updated in the file as they change, so a session with no chat history can resume the work.
+
+A decision that lives only in the chat did not happen: record it in docs/decisions/. Reusable prompts live in docs/prompts/ - use them instead of improvising.
 
 ## Detailed rules (load only when relevant)
 
