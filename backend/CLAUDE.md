@@ -14,6 +14,11 @@ A sample enterprise API managing business assets, with role-based access control
 - Never commit. The human commits.
 - One task, one scope. Ask before widening a change.
 
+# Global instructions
+
+These apply across all projects, in addition to any project-level
+`CLAUDE.md`.
+
 ## Plan State Continuity
 
 Work in progress is tracked in `docs/superpowers/plans/`.
@@ -30,6 +35,8 @@ Every plan in `docs/superpowers/plans/` opens with this block, above the goal:
 >
 > **Last updated:** {YYYY-MM-DD} · {commit sha, or `uncommitted`}
 ```
+
+Keep the empty `>` lines: Markdown formatted with `proseWrap: "never"` joins consecutive lines into one, and the header is read line by line.
 
 `Resume at` is authoritative and is **not** "the first unchecked box" — it is where work actually restarts, which may be mid-task, a rework of an already-checked box, or a verification step.
 
@@ -71,6 +78,18 @@ Before making any changes:
 - **Do not invent** requirements, behaviors, APIs, data models, or implementation details. If anything is unclear or missing, stop and ask me specific questions before proceeding.
 - If additional context or files are required, tell me exactly what you need.
 
+## Git push
+
+Never run `git push`, in any form (`--force`, `--tags`, to any remote or branch), nor any command that pushes on your behalf (`gh pr create` pushing a branch, `gh repo sync`, etc.). Pushing is mine alone: stop at the local commit and tell me it is ready to push.
+
+## Code design
+
+Code you write or change respects the **SOLID** principles (single responsibility, open/closed, Liskov substitution, interface segregation, dependency inversion) and uses established **Design Patterns** (GoF and idiomatic equivalents) where they fit the problem. Pick a pattern because the code needs it now, and name it in the design or review when you apply one. When the existing code departs from these principles, point it out and ask before refactoring beyond the change's scope.
+
+## Workflow
+
+business idea -> specification (docs/superpowers/specs/) -> the security-review skill -> first screen -> look at the running application -> accessibility review -> adjust -> repeat.
+
 ## Code design
 
 Code you write or change respects the **SOLID** principles (single responsibility, open/closed, Liskov substitution, interface segregation, dependency inversion) and uses established **Design Patterns** (GoF and idiomatic equivalents) where they fit the problem. Pick a pattern because the code needs it now, and name it in the design or review when you apply one. When the existing code departs from these principles, point it out and ask before refactoring beyond the change's scope.
@@ -85,11 +104,6 @@ Code you write or change respects the **SOLID** principles (single responsibilit
 | Database and migrations | .claude/rules/database.md |
 | API contract (OpenAPI) | .claude/rules/api-contract.md |
 | Naming conventions | .claude/rules/naming.md |
-
-## Workflow
-
-business need -> specification (docs/superpowers/specs/) -> invariants -> the security-review skill -> adjust specification -> execution plan (docs/superpowers/plans/) -> implement small task ->
-verify -> human review -> human commit.
 
 ## Commands
 
