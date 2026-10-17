@@ -8,11 +8,6 @@ It stays **concise**: details live in focused rule files loaded on demand.
 
 The user interface of a sample enterprise asset platform. Replace this paragraph with a short, precise description of YOUR application and its users.
 
-# Global instructions
-
-These apply across all projects, in addition to any project-level
-`CLAUDE.md`.
-
 ## Plan State Continuity
 
 Work in progress is tracked in `docs/superpowers/plans/`.
@@ -90,12 +85,12 @@ Reusable prompts live in docs/prompts/ - use them instead of improvising.
 
 ## Non-negotiable rules
 
-* The OpenAPI contract is the source of truth for API consumption. Generated client code is never manually edited.
-* The design system rules apply to every screen. No ad-hoc styling.
-* Accessibility is part of every feature, not a final phase.
-* Every task ends with a verification command (tests, lint, build). Never claim "it should work" - run it.
-* Never commit. The human commits.
-* One task, one component when possible. Ask before widening a change.
+- The OpenAPI contract is the source of truth for API consumption. Generated client code is never manually edited.
+- The design system rules apply to every screen. No ad-hoc styling.
+- Accessibility is part of every feature, not a final phase.
+- Every task ends with a verification command (tests, lint, build). Never claim "it should work" - run it.
+- Never commit. The human commits.
+- One task, one component when possible. Ask before widening a change.
 
 ## Detailed rules (load only when relevant)
 
@@ -110,8 +105,8 @@ Reusable prompts live in docs/prompts/ - use them instead of improvising.
 
 ## Commands
 
-* Install: `npm ci`
-* Dev server: `npm start`
-* Tests: `npm test`
-* Lint: `npm run lint`
-* Production build: `npm run build`
+- Install: `npm ci`
+- Dev server: `npm start`
+- Tests: `npm test`
+- Lint: `npm run lint`
+- Production build: `npm run build`

@@ -14,11 +14,6 @@ A sample enterprise API managing business assets, with role-based access control
 - Never commit. The human commits.
 - One task, one scope. Ask before widening a change.
 
-# Global instructions
-
-These apply across all projects, in addition to any project-level
-`CLAUDE.md`.
-
 ## Plan State Continuity
 
 Work in progress is tracked in `docs/superpowers/plans/`.
