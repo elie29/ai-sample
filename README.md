@@ -34,6 +34,9 @@ The articles explain the *why* behind every folder in this repository.
    **validated by the human** before the next step. The state of the work lives in those
    files, not in the conversation: a session can be stopped, cleared or restarted at any
    moment without losing anything. A decision that lives only in the chat did not happen.
+   Every plan opens with a `Status` / `Resume at` / `Last updated` header followed by a
+   `## Tasks` index, one checkbox per task with its date and commit sha - see the
+   [plan state sample](plan-state-sample.png).
 5. **Prompts are project assets.** Reusable prompts live in docs/prompts/, are
    versioned with the code and improved after every use.
 6. **Verification is part of development.** Every task has a verification command,
@@ -44,6 +47,7 @@ The articles explain the *why* behind every folder in this repository.
 ```text
 ai-sample/
 ├── README.md                         <- you are here
+├── plan-state-sample.png             <- what a plan's state header and task index look like
 ├── backend/
 │   ├── CLAUDE.md                     <- concise entry point, read by the AI every session
 │   ├── .claude/
