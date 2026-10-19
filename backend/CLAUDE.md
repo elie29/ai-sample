@@ -52,7 +52,7 @@ Never end a turn that changed state — code, decision, or blocker — without t
 
 ### Closing a plan
 
-When the last task is checked, set `Status:` to `done` in the same write. That task's line and `Last updated` carry the date alone — `- [x] Task 12 — 2026-08-11` — since the closing commit cannot name itself and a `done` plan is never resumed; `git log -1 -- <plan>` finds it. `Resume at` reads `— (nothing; every task is checked)`.
+When the last task is checked, set `Status:` to `done` in the same write. That task's line, every task still marked `uncommitted` and `Last updated` carry the date alone — `- [x] Task 12 — 2026-08-11` — since the closing commit cannot name itself and a `done` plan is never resumed; `git log -1 -- <plan>` finds it. `Resume at` reads `— (nothing; every task is checked)`.
 
 ### On resume
 
